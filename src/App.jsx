@@ -1,6 +1,7 @@
 
 import './App.css'
 import Banner from './components/Banner/Banner'
+import GetStarted from './components/GetStarted/GetStarted'
 import Navbar from './components/Navbar/Navbar'
 import StatsSection from './components/StatsSection/StatsSection'
 
@@ -12,7 +13,12 @@ function App() {
       <Navbar></Navbar>
 
       <Banner></Banner>
+
       <StatsSection></StatsSection>
+
+
+
+      <GetStarted></GetStarted>
     </>
   )
 }
