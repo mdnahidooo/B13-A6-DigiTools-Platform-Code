@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import DemoImg from '../../../assets/Play.png'
 import Features from './Features/Features';
 
-const Product = ({ data }) => {
+const Product = ({ data, carts, setCarts }) => {
     // console.log(data);
     const [isSubscribed, setIsSubscribed] = useState(false)
 
     const handleSubscribed = () => {
         setIsSubscribed(true);
+        setCarts([...carts, data]);
     }
 
     const badgeColor =

@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = ({ carts }) => {
+    console.log(carts);
     return (
         <div>
             <div className='w-10/12 mx-auto space-y-5'>
@@ -9,41 +10,23 @@ const Cart = () => {
                 <div>
                     <ul className="list bg-base-100 rounded-box shadow-md">
 
-                        <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">Most played songs this week</li>
+                        <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">Your wanted products</li>
 
-                        <li className="list-row">
-                            <div><img className="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/1@94.webp" /></div>
-                            <div>
-                                <div>Dio Lupa</div>
-                                <div className="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
-                            </div>
-                            <button className="btn btn-ghost btn-outline btn-error rounded-full">
-                                Delete
-                            </button>
-                        </li>
+                        {
+                            carts.map(item => (
+                                <li className="list-row" key={item.id}>
+                                    <div><img className="size-10 rounded-box" src={item.icon} /></div>
+                                    <div>
+                                        <div>{item.name}</div>
+                                        <div className="text-xs uppercase font-semibold opacity-60">${item.price}</div>
+                                    </div>
+                                    <button className="btn btn-ghost btn-outline btn-error rounded-full">
+                                        Delete
+                                    </button>
+                                </li>
 
-                        <li className="list-row">
-                            <div><img className="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/4@94.webp" /></div>
-                            <div>
-                                <div>Ellie Beilish</div>
-                                <div className="text-xs uppercase font-semibold opacity-60">Bears of a fever</div>
-                            </div>
-                            <button className="btn btn-ghost btn-outline btn-error rounded-full">
-                                Delete
-                            </button>
-                        </li>
-
-                        <li className="list-row">
-                            <div><img className="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/3@94.webp" /></div>
-                            <div>
-                                <div>Sabrino Gardener</div>
-                                <div className="text-xs uppercase font-semibold opacity-60">Cappuccino</div>
-                            </div>
-
-                            <button className="btn btn-ghost btn-outline btn-error rounded-full">
-                                Delete
-                            </button>
-                        </li>
+                            ))
+                        }
 
                     </ul>
                 </div>

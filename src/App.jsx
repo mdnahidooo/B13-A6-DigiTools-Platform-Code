@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Footer from './components/Footer/Footer'
@@ -23,6 +23,9 @@ function App() {
   const dataPromise = fetchData();
   // console.log(dataPromise);
 
+  const [carts, setCarts] = useState([]);
+  console.log(carts);
+
   return (
     <>
       <Navbar></Navbar>
@@ -33,9 +36,8 @@ function App() {
 
 
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <Products dataPromise={dataPromise}></Products>
+        <Products dataPromise={dataPromise} carts={carts} setCarts={setCarts}></Products>
 
-        <Cart></Cart>
       </Suspense>
 
       <GetStarted></GetStarted>

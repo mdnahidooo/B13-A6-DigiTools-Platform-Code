@@ -1,9 +1,16 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import Product from './Product/Product';
+import Cart from './Cart/Cart';
 
-const Products = ({ dataPromise }) => {
+
+const Products = ({ dataPromise, carts, setCarts }) => {
     const dataArray = use(dataPromise)
     // console.log(dataArray);
+
+    const [activeTab, setActiveTab] = useState("products");
+    // console.log(activeTab);
+
+
     return (
         <div className='w-10/12 mx-auto'>
             <div className='mt-30 mb-5 space-y-4'>
@@ -14,20 +21,26 @@ const Products = ({ dataPromise }) => {
 
             {/* name of each tab group should be unique */}
             <div className="tabs tabs-box flex justify-center bg-white mb-10">
-                <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label="Products" defaultChecked />
-                <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label="Cart (2)" />
+                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 font-bold" aria-label="Products" onClick={() => setActiveTab('products')} defaultChecked />
+                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 font-bold" aria-label="Cart (2)" onClick={() => setActiveTab('cart')} />
 
             </div>
 
-            <div className='grid md:grid-cols-3 gap-6'>
-                {
-                    dataArray.map(data => (
-                        <div>
-                            <Product key={data.id} data={data}></Product>
-                        </div>
-                    ))
-                }
-            </div>
+            {
+                activeTab === "products" && <div className='grid md:grid-cols-3 gap-6'>
+                    {
+                        dataArray.map(data => (
+                            <div key={data.id}>
+                                <Product data={data} carts={carts} setCarts={setCarts}></Product>
+                            </div>
+                        ))
+                    }
+                </div>
+            }
+
+            {
+                activeTab === "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>
+            }
 
         </div>
     );
