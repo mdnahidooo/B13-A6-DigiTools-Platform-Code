@@ -29,7 +29,7 @@
       "SEO optimized",
       "Easy customization"
     ],
-    "icon": "/products/portfolio.png"
+    "icon": "/products/ai.png"
   },
   {
     "id": 3,
@@ -77,7 +77,7 @@
       "Download PDF invoices",
       "Client management"
     ],
-    "icon": "/products/shopping-cart.png"
+    "icon": "/products/freelancer.png"
   },
   {
     "id": 6,
@@ -141,6 +141,6 @@
       "High-resolution export",
       "Brand kit included"
     ],
-    "icon": "/products/writing_2327400 1.png"
+    "icon": "/products/logoMaker.png"
   }
 ]

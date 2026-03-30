@@ -23,7 +23,7 @@ const Navbar = ({ carts }) => {
                             <li><a>FAQ</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-3xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA]">DigiTools</a>
+                    <a className="btn btn-ghost text-xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA]">DigiTools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -37,7 +37,7 @@ const Navbar = ({ carts }) => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <div className="relative mr-4">
+                    <div className="relative md:mr-4">
                         <CiShoppingCart className="text-2xl cursor-pointer" />
 
                         {
