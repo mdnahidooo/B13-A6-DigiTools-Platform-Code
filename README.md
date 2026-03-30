@@ -94,5 +94,5 @@ Fully optimized for:
 
 ## What to submit:
 
-- GitHub Repository Link:
-- Live Site Link:
+- GitHub Repository Link: https://github.com/mdnahidooo/B13-A6-DigiTools-Platform-Code
+- Live Site Link: https://digitools-platform-code.netlify.app/
