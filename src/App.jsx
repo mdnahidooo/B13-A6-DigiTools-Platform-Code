@@ -35,7 +35,11 @@ function App() {
       <StatsSection></StatsSection>
 
 
-      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+      <Suspense fallback={
+        <div className="flex justify-center items-center h-[60vh]">
+          <span className="loading loading-spinner loading-xl text-primary"></span>
+        </div>
+      }>
         <Products dataPromise={dataPromise} carts={carts} setCarts={setCarts}></Products>
 
       </Suspense>

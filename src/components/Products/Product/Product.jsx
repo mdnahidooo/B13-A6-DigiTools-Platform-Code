@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DemoImg from '../../../assets/Play.png'
 import Features from './Features/Features';
+import { toast } from 'react-toastify';
 
 const Product = ({ data, carts, setCarts }) => {
     // console.log(data);
@@ -8,7 +9,14 @@ const Product = ({ data, carts, setCarts }) => {
 
     const handleSubscribed = () => {
         setIsSubscribed(true);
+
+        const isFound = carts.find(item => item.id === data.id);
+        if (isFound) {
+            toast.error(`${data.name} already added to cart.`);
+            return;
+        }
         setCarts([...carts, data]);
+        toast.success(`${data.name} added to cart.`)
     }
 
     const badgeColor =
