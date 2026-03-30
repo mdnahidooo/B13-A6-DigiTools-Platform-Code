@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI-powered suggestions and modern templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI content suggestions"
+    ],
+    "icon": "/public/products/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Launch your personal portfolio website with ready-made components.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Responsive design",
+      "Custom domain support",
+      "SEO optimized",
+      "Easy customization"
+    ],
+    "icon": "/public/products/portfolio.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Content Generator",
+    "description": "Generate blog posts, captions, and marketing content using AI.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Blog writing",
+      "Social media captions",
+      "SEO keywords",
+      "Multi-language support"
+    ],
+    "icon": "/public/products/writing_2327400 1.png"
+  },
+  {
+    "id": 4,
+    "name": "Design Assets Bundle",
+    "description": "Access thousands of icons, illustrations, and UI kits.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "5000+ icons",
+      "Illustration packs",
+      "UI kits",
+      "Figma compatible"
+    ],
+    "icon": "/public/products/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Invoice Tool",
+    "description": "Create and manage professional invoices.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Custom branding",
+      "Tax calculation",
+      "Download PDF invoices",
+      "Client management"
+    ],
+    "icon": "/public/products/shopping-cart.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Scheduler",
+    "description": "Schedule and automate posts across multiple platforms.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Multi-platform support",
+      "Auto posting",
+      "Analytics dashboard",
+      "Content calendar"
+    ],
+    "icon": "/public/products/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "E-commerce Starter Pack",
+    "description": "Start your online store with ready-to-use templates and tools.",
+    "price": 79.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Product pages",
+      "Payment integration",
+      "Cart system",
+      "Mobile optimized"
+    ],
+    "icon": "/public/products/shopping-cart.png"
+  },
+  {
+    "id": 8,
+    "name": "Code Snippet Manager",
+    "description": "Save, organize, and reuse your code snippets efficiently.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Syntax highlighting",
+      "Tag organization",
+      "Search snippets",
+      "Cloud sync"
+    ],
+    "icon": "/public/products/operation.png"
+  },
+   {
+    "id": 9,
+    "name": "AI Logo Maker",
+    "description": "Design stunning logos instantly with AI-driven customization tools.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "AI logo generation",
+      "Custom color palettes",
+      "High-resolution export",
+      "Brand kit included"
+    ],
+    "icon": "/public/products/writing_2327400 1.png"
+  }
+]

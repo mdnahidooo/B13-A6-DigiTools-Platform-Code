@@ -5,16 +5,14 @@ import RocketImg from '../../assets/rocket.png'
 
 const GetStarted = () => {
     return (
-        <div className="navbar bg-gray-200 shadow-sm py-20 flex flex-col">
+        <div className="bg-base-200 shadow-sm py-20 flex flex-col">
             <div className='mx-auto space-y-2 my-10'>
-                <h2 className='text-5xl font-bold text-center'>Get Started in 3 Steps</h2>
+                <h2 className='text-3xl text-center md:text-5xl font-bold'>Get Started in 3 Steps</h2>
                 <p className='text-gray-400 text-center'>Start using premium digital tools in minutes, not hours.</p>
             </div>
 
-            <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3'>
-
-
-                <div className="card bg-base-100 w-96 shadow-sm">
+            <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6'>
+                <div className="card bg-base-100 shadow-sm">
                     <div className='flex justify-between items-end p-4'>
                         <div></div>
                         <div className="w-10 h-10 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full flex items-center justify-center">01</div>
@@ -36,7 +34,7 @@ const GetStarted = () => {
                 </div>
 
 
-                <div className="card bg-base-100 w-96 shadow-sm">
+                <div className="card bg-base-100 shadow-sm">
                     <div className='flex justify-between items-end p-4'>
                         <div></div>
                         <div className="w-10 h-10 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full flex items-center justify-center">02</div>
@@ -58,7 +56,7 @@ const GetStarted = () => {
                 </div>
 
 
-                <div className="card bg-base-100 w-96 shadow-sm">
+                <div className="card bg-base-100 shadow-sm">
                     <div className='flex justify-between items-end p-4'>
                         <div></div>
                         <div className="w-10 h-10 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full flex items-center justify-center">03</div>

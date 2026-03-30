@@ -7,13 +7,13 @@ const Banner = () => {
     return (
         <div>
 
-            <div className="hero bg-base-200 min-h-screen">
+            <div className="hero md:bg-base-200 min-h-screen md:mb-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={BannerImg}
                         className="max-w-sm rounded-lg shadow-2xl"
                     />
-                    <div className='space-y-2'>
+                    <div className='py-10 text-center md:text-start md:space-y-2'>
 
                         <div className="badge badge-soft badge-primary"><FaRegDotCircle /> New: AI-Powered Tools Available</div>
 
