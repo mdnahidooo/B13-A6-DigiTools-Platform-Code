@@ -15,7 +15,7 @@ const Banner = () => {
                     />
                     <div className='py-10 text-center md:text-start md:space-y-2'>
 
-                        <div className="badge badge-soft badge-primary"><FaRegDotCircle /> New: AI-Powered Tools Available</div>
+                        <div className="badge badge-soft badge-outline rounded-full badge-primary"><FaRegDotCircle /> New: AI-Powered Tools Available</div>
 
                         <h1 className="text-2xl md:text-5xl font-bold ">Supercharge Your <br />
                             Digital Workflow</h1>

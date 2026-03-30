@@ -89,3 +89,10 @@ Fully optimized for:
 - Payment gateway integration  
 - Product filtering & search  
 - Wishlist feature  
+
+---
+
+## What to submit:
+
+- GitHub Repository Link:
+- Live Site Link:
