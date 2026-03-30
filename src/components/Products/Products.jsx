@@ -14,8 +14,8 @@ const Products = ({ dataPromise }) => {
 
             {/* name of each tab group should be unique */}
             <div className="tabs tabs-box flex justify-center bg-white mb-10">
-                <input type="radio" name="my_tabs_1" className="tab" aria-label="Products" defaultChecked />
-                <input type="radio" name="my_tabs_1" className="tab" aria-label="Cart (2)" />
+                <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label="Products" defaultChecked />
+                <input type="radio" name="my_tabs_1" className="tab rounded-full" aria-label="Cart (2)" />
 
             </div>
 

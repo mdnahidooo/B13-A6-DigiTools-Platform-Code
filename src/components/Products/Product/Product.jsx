@@ -1,18 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DemoImg from '../../../assets/Play.png'
 import Features from './Features/Features';
 
 const Product = ({ data }) => {
     // console.log(data);
+    const [isSubscribed, setIsSubscribed] = useState(false)
+
+    const handleSubscribed = () => {
+        setIsSubscribed(true);
+    }
+
+    const badgeColor =
+        data.tagType === "popular"
+            ? "bg-red-100 text-red-600"
+            : data.tagType === "best seller"
+                ? "bg-yellow-100 text-yellow-600"
+                : data.tagType === "new"
+                    ? "bg-green-100 text-green-600"
+                    : "bg-gray-100 text-gray-600";
+
     return (
         <div>
             <div className='w-10/12 mx-auto'>
-                
+
 
                 <div className="card bg-base-200 shadow-sm">
                     <div className='flex justify-between items-end p-4'>
                         <div></div>
-                        <div className="badge badge-success rounded-full">{data.tagType}</div>
+                        <div className={`badge  rounded-full ${badgeColor}`}>{data.tagType}</div>
                     </div>
 
                     <div className='pl-4'>
@@ -37,26 +52,10 @@ const Product = ({ data }) => {
                                     <Features key={index} feature={feature}></Features>
                                 ))
                             }
-                            {/* <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                <span>Access to 10 free tools</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                <span>Basic templates</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                <span>Community support</span>
-                            </li>
-                            <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                <span>1 project per month</span>
-                            </li> */}
 
                         </ul>
                         <div className="mt-6">
-                            <button className="btn btn-primary btn-block rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Buy Now</button>
+                            <button onClick={handleSubscribed} className={`btn  btn-block rounded-full text-white ${isSubscribed ? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>{isSubscribed ? "Add to Cart" : "Buy Now"}</button>
                         </div>
                     </div>
                 </div>

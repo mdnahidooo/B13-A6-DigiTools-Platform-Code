@@ -9,6 +9,7 @@ import Products from './components/Products/Products'
 import StatsSection from './components/StatsSection/StatsSection'
 import SubscriptionPricing from './components/SubscriptionPricing/SubscriptionPricing'
 import TransformWorkflow from './components/TransformWorkflow/TransformWorkflow'
+import Cart from './components/Products/Cart/Cart'
 
 
 const fetchData = async () => {
@@ -33,6 +34,8 @@ function App() {
 
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
         <Products dataPromise={dataPromise}></Products>
+
+        <Cart></Cart>
       </Suspense>
 
       <GetStarted></GetStarted>
