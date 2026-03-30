@@ -22,7 +22,7 @@ const Products = ({ dataPromise, carts, setCarts }) => {
             {/* name of each tab group should be unique */}
             <div className="tabs tabs-box flex justify-center bg-white mb-10">
                 <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 font-bold" aria-label="Products" onClick={() => setActiveTab('products')} defaultChecked />
-                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 font-bold" aria-label="Cart (2)" onClick={() => setActiveTab('cart')} />
+                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 font-bold" aria-label={`Cart (${carts.length})`} onClick={() => setActiveTab('cart')} />
 
             </div>
 

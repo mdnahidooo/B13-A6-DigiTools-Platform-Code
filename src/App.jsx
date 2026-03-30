@@ -24,11 +24,11 @@ function App() {
   // console.log(dataPromise);
 
   const [carts, setCarts] = useState([]);
-  console.log(carts);
+  // console.log(carts);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
 
       <Banner></Banner>
 
