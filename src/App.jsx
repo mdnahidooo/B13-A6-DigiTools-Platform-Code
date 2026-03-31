@@ -17,10 +17,10 @@ const fetchData = async () => {
   return res.json();
 }
 
+const dataPromise = fetchData();
 
 function App() {
 
-  const dataPromise = fetchData();
   // console.log(dataPromise);
 
   const [carts, setCarts] = useState([]);
@@ -35,14 +35,7 @@ function App() {
       <StatsSection></StatsSection>
 
 
-      <Suspense fallback={
-        <div className="flex justify-center items-center h-[60vh]">
-          <span className="loading loading-spinner loading-xl text-primary"></span>
-        </div>
-      }>
-        <Products dataPromise={dataPromise} carts={carts} setCarts={setCarts}></Products>
-
-      </Suspense>
+      <Products dataPromise={dataPromise} carts={carts} setCarts={setCarts}></Products>
 
       <GetStarted></GetStarted>
 
